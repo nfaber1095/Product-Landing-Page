@@ -1,0 +1,167 @@
+*, ::before, ::after
+{
+    box-sizing: border-box;
+    padding: 0;
+  margin: 0;
+}
+
+
+html {font-size: 62.5%;}
+
+.heading {display: flex;
+    position: fixed;
+top:0;
+width:100%;
+height: 12vh;
+min-height: 75px;
+padding:  50px;
+background-color: rgb(196, 232, 232);
+
+}
+
+#header-img {object-fit:cover;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: 10%;
+    margin-top: 10px;
+   
+   
+}
+
+#nav-bar {position: fixed;
+    top:0;
+    text-align: center;
+    right: 0;
+    font-size: 2rem;
+    margin-top: 4vh;
+    margin-right: 20px;
+}
+
+li {list-style: none;}
+
+nav ul {display: flex;
+    flex-direction: row;
+padding-top: 20px;
+justify-content: space-around;
+width: 60vw;}
+
+body {font-family: Raleway;
+    font-size: 1.6rem;;
+width: 100%;
+height: 100%;
+background-color: azure;
+}
+
+body p, body ul {font-family:sans-serif;}
+
+.video {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+
+}
+
+h2::not(.product-container) {margin: 20px 0;
+text-align: center;}
+
+.product-container h2 {padding-bottom: 10px;
+}
+
+.benefits {text-align: center;
+line-height: 2.8rem;
+}
+
+.benefits p {margin-top: 20px;
+}
+
+.features-list, .aio-list {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.features {border-bottom: 2px solid grey;
+margin-bottom: 20px;}
+
+
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:80%;
+column-gap: 2rem;
+margin: 0 auto;
+padding-top: 30px;
+
+padding-bottom: 30px;}
+
+.nuvo-15, .nuvo-20, .nuvo-25 {margin: 0 auto;}
+
+
+form {padding-bottom: 20px;
+margin: 0 auto;
+display: block;
+text-align: center;}
+
+.form-text {font-size: 1.8rem;
+font-weight: bold;
+padding: 5px;}
+
+a {color:black;
+text-decoration: none;}
+
+a:hover {color: rgb(196, 232, 232);
+background-color: rgb(30, 87, 140);
+border-radius: 3px;}
+
+footer {padding:10px;
+font-size: 1.2rem;
+color:grey;}
+footer a {color: grey;}
+
+
+@media only screen and (max-width: 720px) {
+    .image-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .text-with-images {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .hero-title {
+      font-size: 6rem;
+    }
+    
+    .hero-subtitle,
+    .author,
+    .quote,
+    .list-title {
+      font-size: 1.8rem;
+    }
+    
+    .social-icons {
+      font-size: 2rem;
+    }
+  
+    .text {
+      font-size: 1.6rem;
+    } 
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  }
